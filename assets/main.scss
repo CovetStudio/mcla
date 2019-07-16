@@ -1,0 +1,26 @@
+$primary: rgb(45, 61, 95);
+$info: orange;
+$success: green;
+$warning: blue;
+$danger: indigo;
+$light: lightgrey;
+$dark: darkgrey;
+$body-size: 15px !important;
+$navbar-background-color: transparent !important;
+$body-background-color: #000;
+$gap: 64px;
+$size-6: 10px !important;
+$body-line-height: 1.2;
+
+.navbar-item.is-mega {
+    position: static;
+  
+    .is-mega-menu-title {
+      margin-bottom: 0;
+      padding: .375rem 1rem;
+    }
+  }
+  
+
+@import "~bulma/bulma";
+
