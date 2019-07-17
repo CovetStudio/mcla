@@ -15,43 +15,62 @@
 
   <div id="navbarExampleTransparentExample" class="navbar-menu">
     <div class="navbar-start">
-      <a class="navbar-item" href="https://bulma.io/">
+      <a class="navbar-item" href="">
          
       </a>
       <div class="navbar-item has-dropdown is-hoverable">
-        <a class="navbar-link has-text-white is-size-5" href="https://bulma.io/documentation/overview/start/">
+        <a class="navbar-link has-text-white is-size-5" href="">
           collection
         </a>
         <div class="navbar-dropdown is-boxed">
 
-        <div class="">
-          <a class="navbar-item" href="https://bulma.io/documentation/overview/start/">
+        <div class="is-flex is-size-6">
+          <a class="navbar-item" href="">
             STORAGE
           </a>
+          <a class="navbar-item" href="">
+            SEATING
+          </a>
+          <a class="navbar-item" href="">
+            TABLES
+          </a>          
+        </div>
+
           <hr class="navbar-divider">
-          <a class="navbar-item" href="https://bulma.io/documentation/elements/box/">
+
+        <div class="is-flex">
+          <a class="navbar-item" href="">
             Sideboards
           </a>
-          <a class="navbar-item is-active" href="https://bulma.io/documentation/components/breadcrumb/">
+          <a class="navbar-item" href="">
+            Credenzas
+          </a>
+          <a class="navbar-item" href="">
             Credenzas
           </a>          
         </div>
-
-
-        <div class="">
-          <a class="navbar-item" href="https://bulma.io/documentation/overview/start/">
-            STORAGE
+        <div class="is-flex">
+          <a class="navbar-item" href="">
+            Sideboards
           </a>
-          <hr class="navbar-divider">
-          <a class="navbar-item" href="https://bulma.io/documentation/elements/box/">
+          <a class="navbar-item" href="">
             Credenzas
           </a>
-          <a class="navbar-item is-active" href="https://bulma.io/documentation/components/breadcrumb/">
+          <a class="navbar-item" href="">
             Credenzas
           </a>          
         </div>
-
-
+        <div class="is-flex">
+          <a class="navbar-item" href="">
+            Sideboards
+          </a>
+          <a class="navbar-item" href="">
+            Credenzas
+          </a>
+          <a class="navbar-item is-active" href="">
+            Credenzas
+          </a>          
+        </div>
 
         </div>
       </div>
@@ -107,7 +126,7 @@
   <div class="column is-two-thirds">
  <div class="content is-large ">
 
- <p class="is-gray is-size-1">
+ <p class="has-text-grey is-size-1">
    offers a selection of upholstered and refinished furnitures, providing long-lasting pieces with characters since 2010.
  </p>
  </div>
@@ -116,21 +135,21 @@
 
  <div class="columns">
   <div class="column is-half">
- <div class="content is-large ">
+ <div class="content is-medium">
 
- <p class="is-gray">
-wefwef
-wefwefwef </p>
+ <p class="has-text-grey-light">
+5333 cahuenga blvd. north hollywood, ca 91601<br/>
++1.818.509.3050<br/>
+hello@midcenturyla.com<br/>
+instagram.com/midcenturyla<br/>
+</p>
  </div>
 </div>
 
 
   <div class="column is-half">
  <div class="content">
-
- <p class="">
-g map
-</p>
+<img src="map.png">
  </div>
 </div>
 
@@ -155,7 +174,18 @@ export default {
 <style lang="scss">
 
 @import '~assets/main.scss';
-
+.navbar-link::after {
+    border: 2px solid transparent !important;
+    border-radius: 2px !important;
+    border-right: 0!important;
+    border-top: 0 !important;
+    border-color: #fff !important;
+    height: .4em !important;
+    width: .4em !important;
+}
+.navbar-link:not(.is-arrowless) {
+    padding-right: 1.8em;
+}
 .small-nav {padding-top:18px}
 .small-nav a{padding-left: 12px;font-size: .85rem !important}
 .navbar {min-height: 60px;}

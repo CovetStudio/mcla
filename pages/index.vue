@@ -1,6 +1,6 @@
 <template>
 <section>
-<div class="container is-fullhd p-4 main-banner" style="background-image: url('/MCLA2498.png');">
+<div class="container is-marginless is-fullhd p-4 main-banner" style="background-image: url('/MCLA2498.png');">
 
 </div>
 
@@ -25,7 +25,7 @@
   </div>
 </div>
 
-<div class="container is-fullhd p-2 main-break" style="background-image: url('/lookbook.png');">
+<div class="container is-marginless is-fullhd p-2 main-break" style="background-image: url('/lookbook.png');">
       <h2 class="title is-h2 has-text-white is-size-1">
         <a class="has-text-white" href="">lookbook <font-awesome-icon :icon="['fas', 'arrow-right']"/></a>
       </h2>
@@ -83,7 +83,7 @@ export default {
 
 }
 .title svg.svg-inline--fa {
-      width: 0.3em;
+      width: 0.23em;
 }
 
 .p-1 {
