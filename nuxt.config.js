@@ -13,9 +13,16 @@ export default {
     ],
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
-      { rel: 'stylesheet', href: 'https://use.typekit.net/mjm0dyl.css' }
-
-
+      { rel: 'stylesheet', href: 'https://use.typekit.net/mjm0dyl.css' },
+      { rel: 'stylesheet', href: 'https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css' }
+    ],
+    script: [
+      {
+        src: "https://code.jquery.com/jquery-3.3.1.slim.min.js",
+        type: "text/javascript"
+      },
+      {src: '/gridzy.min.js'},
+      {src: '/jquery.fancybox.min.js'}
     ]
   },
   /*
@@ -26,6 +33,7 @@ export default {
   ** Global CSS
   */
   css: [
+    '~/assets/gridzy.min.css'
   ],
   /*
   ** Plugins to load before mounting the App

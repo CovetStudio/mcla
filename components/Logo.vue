@@ -1,9 +1,11 @@
 <template>
-    <a class="" href="https://bulma.io">
-      <img height="" width="120px" src="~assets/midcenturyla.png"/>
-  </a>
+    <nuxt-link to="/">
+      <img class="logo" src="~assets/midcenturyla.png"/>
+    </nuxt-link>
 </template>
 
 <style>
-
+.logo {
+  width: 120px;
+} 
 </style>

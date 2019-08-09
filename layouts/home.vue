@@ -1,30 +1,43 @@
 <template>
 <div>
 <!-- Main container -->
-  <Nav />
+<Nav />
 
-  <nuxt />
+<nuxt />
+
 
 <footer class="footer has-background-black">
 <div class="container is-fluid">
+ <Logo />
+
+ <div class="columns">
+  <div class="column is-two-thirds">
+ <div class="content is-large ">
+
+ <p class="has-text-grey is-size-1">
+   offers a selection of upholstered and refinished furnitures, providing long-lasting pieces with characters since 2010.
+ </p>
+ </div>
+</div>
+</div>
 
  <div class="columns">
   <div class="column is-half">
-        <nuxt-link class="title is-size-1 has-text-white" to="./">back
-             <font-awesome-icon :icon="['fas', 'arrow-left']" />
-        </nuxt-link>
+ <div class="content is-medium">
+
+ <p class="has-text-grey-light">
+5333 cahuenga blvd. north hollywood, ca 91601<br/>
++1.818.509.3050<br/>
+hello@midcenturyla.com<br/>
+instagram.com/midcenturyla<br/>
+</p>
+ </div>
 </div>
 
 
   <div class="column is-half">
-        <div class="content is-medium">
-          <p class="has-text-grey-light" style="float:left">
-            5333 cahuenga blvd. north hollywood, ca 91601<br/>
-            +1.818.509.3050<br/>
-            hello@midcenturyla.com<br/>
-            instagram.com/midcenturyla<br/>
-            </p>
-<img style="max-width:44px; float:right" src="/icon.png">
+ <div class="content">
+<img src="map.png">
  </div>
 </div>
 
@@ -37,10 +50,12 @@
   </div>
 </template>
 <script>
+import Logo from '~/components/Logo.vue'
 import Nav from '~/components/Nav.vue'
 
 export default {
   components: {
+    Logo,
     Nav
   }
 }
