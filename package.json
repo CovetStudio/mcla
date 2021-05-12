@@ -19,7 +19,7 @@
     "@nuxtjs/bulma": "^1.2.1",
     "nuxt": "^2.0.0",
     "nuxt-fontawesome": "^0.4.0",
-    "postcss": "^7.0.17",
+    "postcss": "^8.2.10",
     "postcss-nested": "^4.1.2"
   },
   "devDependencies": {
